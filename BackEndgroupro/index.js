@@ -1,0 +1,23 @@
+const express=require('express')
+const users=require('./routes/user')
+const material=require('./routes/materials')
+const employee=require('./routes/emp')
+const proj=require('./routes/proj')
+const mongoose=require('mongoose')
+const cors=require('cors')
+const app=express()
+app.use(cors())
+mongoose.connect('mongodb://127.0.0.1:27017/XpenseTrack')
+mongoose.connection.on('connected',()=>{
+    console.log("Mongodb successfully connected")
+})
+app.get('/',(req,res)=>{
+    res.send("Backend server")
+})
+app.use('/users',users)
+app.use('/materials',material)
+app.use('/employee',employee)
+app.use('/proj',proj)
+app.listen(3001,()=>{   
+    console.log("Server is running on port 3001")
+})

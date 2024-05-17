@@ -1,0 +1,39 @@
+.sub-div{
+ display:grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ color: rgb(85, 75, 75);
+ padding: 80px;
+ gap:150px;
+
+}
+.par{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+h6{
+    color: rgb(163, 147, 147);
+}
+.s1,.s2,.s3,.s4,.s5,.s6{
+    background-color: rgb(14, 224, 14);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+i{
+    padding-top: 35%;
+    font-size: 35px;
+    color: aliceblue;
+
+}
+@media only screen and (max-width: 600px) {
+    .sub-div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 80px;
+        gap:150px;
+       
+       }
+
+}

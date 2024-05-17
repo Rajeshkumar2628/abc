@@ -1,0 +1,22 @@
+{
+  "material": [
+    {
+      "id": "1",
+      "name": "",
+      "description": "",
+      "cost": ""
+    },
+    {
+      "id": "148d",
+      "name": "Java",
+      "description": "Nothing bro",
+      "cost": "150000"
+    },
+    {
+      "id": "5d43",
+      "name": "aaaa",
+      "description": "aaa",
+      "cost": "444"
+    }
+  ]
+}
